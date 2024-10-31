@@ -95,14 +95,3 @@ contributions are welcome! please feel free to submit a pull request or open an 
 ## 📄 license 
 
 this project is licensed under the mit license.
-
-## ⛩️ preview
-![!](https://media.discordapp.net/attachments/1289976840563195944/1289976901976457226/image.png?ex=66fac81c&is=66f9769c&hm=88a07e38d3ee0ed98bf04bef211c84669bffbc7fa060762e95142368be8341cd&=&format=webp&quality=lossless&width=1023&height=665)
-![!!](https://media.discordapp.net/attachments/1289976840563195944/1289977010193567864/image.png?ex=66fac835&is=66f976b5&hm=bbd5702bf59c64a43644c1345611cb7f6ee8a40c85d7df218c9275502ad7f458&=&format=webp&quality=lossless&width=1034&height=665)
-![!!!](https://media.discordapp.net/attachments/1289976840563195944/1289977121762185268/image.png?ex=66fac850&is=66f976d0&hm=d85a3e8479865e743f4fcbc241aab51ee943f7c6ee4225e7e7477332c5415f18&=&format=webp&quality=lossless&width=1027&height=665)
-![!!!!](https://media.discordapp.net/attachments/1289976840563195944/1289977366566670468/image.png?ex=66fac88a&is=66f9770a&hm=cd024b921abe560b808007cc80ee53dd8f00d2e7dcdf2defec4ea5777971e8a3&=&format=webp&quality=lossless&width=1002&height=665)
-![!!!!!](https://media.discordapp.net/attachments/1289976840563195944/1289977366927507559/image.png?ex=66fac88a&is=66f9770a&hm=a4edf06eae497779a0c331b2e0b461fcda5f7e63b75d9d6138c15e900655926d&=&format=webp&quality=lossless&width=998&height=665)
-![!!!!!!](https://media.discordapp.net/attachments/1289976840563195944/1289977763087912992/image.png?ex=66fac8e9&is=66f97769&hm=38a4196682d9a8f6141d77b8d6066466b3aaa02907da86b67f7e7ea9ab781e16&=&format=webp&quality=lossless&width=998&height=665)
-![!!!!!!!](https://media.discordapp.net/attachments/1289976840563195944/1289977763410739296/image.png?ex=66fac8e9&is=66f97769&hm=aadce1fb6d1f82cc116aa80bb1af941a211bb87636cc736506a2910fd57deb82&=&format=webp&quality=lossless&width=998&height=665)
-![!!!!!!!!](https://media.discordapp.net/attachments/1289976840563195944/1289979912987480115/image.png?ex=66facae9&is=66f97969&hm=88285d9138cef7b4b8a1d49c1d8b1e3342ea49ea3c9047ff85ebf220e4527faa&=&format=webp&quality=lossless&width=998&height=665)
-![!!!!!!!!!](https://media.discordapp.net/attachments/1289976840563195944/1289979913394458634/image.png?ex=66facaea&is=66f9796a&hm=ac065ad16f9a439c4db6f46a69890b1bef39154b892089c65285a9489d888f7e&=&format=webp&quality=lossless&width=998&height=665)

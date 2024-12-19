@@ -1,4 +1,4 @@
-![kinoflix](https://github.com/user-attachments/assets/ced26b08-d517-4aa6-9a61-ce7622075cca)
+
 
 ![⭐](https://img.shields.io/github/stars/nildontsleep/kinoflix?style=social)  
 ![🍴](https://img.shields.io/github/forks/nildontsleep/kinoflix?style=social)  

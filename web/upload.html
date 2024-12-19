@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link rel="icon" href="/images/kinoflix.ico">
+    <title>kinoflix - upload movie</title>
+    <style> 
+        @import url("https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;700&display=swap");
+
+        :root {
+            --bg-color: rgba(255, 255, 255, 0.8);
+            --card-bg: rgba(255, 255, 255, 0.6);
+            --accent-color: #007aff;
+            --dark-accent: #005bb5;
+            --grey: #aaa;
+            --text-color: #333;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        /* Light theme variables */
+        .light-theme {
+            --bg-color: rgba(255, 255, 255, 0.8);
+            --card-bg: rgba(255, 255, 255, 0.6);
+            --accent-color: #ff9800;
+            --dark-accent: #ff5722;
+            --grey: #666;
+            --text-color: #333;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        /* Dark theme variables */
+        .dark-theme {
+            --bg-color: rgba(34, 34, 34, 0.9);
+            --card-bg: rgba(44, 44, 44, 0.8);
+            --accent-color: #82aaff;
+            --dark-accent: #3d5afe;
+            --grey: #888;
+            --text-color: #f4f4f4;
+            --shadow-color: rgba(0, 0, 0, 0.5);
+        }
+
+        body {
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            height: 100vh;
+            transition: background-color 0.2s, color 0.2s;
+            backdrop-filter: blur(10px);
+            overflow: hidden;
+        }
+
+        .app-container {
+            display: flex;
+            width: 100%;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: var(--card-bg);
+            padding: 20px;
+            box-shadow: 0 4px 30px var(--shadow-color);
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            transition: background-color 0.5s, box-shadow 0.5s;
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            max-width: 100%;
+        }
+
+        .logo h1 {
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 15px 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: var(--accent-color);
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+            scroll-behavior: smooth;
+        }
+
+        .upload-container {
+            margin-bottom: 20px;
+        }
+
+        .upload-container form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .upload-container input,
+        .upload-container textarea,
+        .upload-container select {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid var(--grey);
+            border-radius: 5px;
+            background-color: var(--card-bg);
+            color: var(--text-color);
+            box-shadow: 0 4px 30px var(--shadow-color);
+            backdrop-filter: blur(10px);
+        }
+
+        .upload-container button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: var(--accent-color);
+            color: var(--text-color);
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .upload-container button:hover {
+            background-color: var(--dark-accent);
+            transform: scale(1.1);
+        }
+
+        .upload-container input[type="file"] {
+            border: none;
+        }
+
+        /* Toggle Switch Styles */
+        .theme-switch {
+            display: inline-flex;
+            align-items: center;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .theme-switch input {
+            display: none;
+        }
+
+        .slider {
+            position: relative;
+            width: 50px;
+            height: 24px;
+            background-color: #000;
+            border-radius: 34px;
+            transition: 0.4s;
+        }
+
+        .slider:before {
+            content: "";
+            position: absolute;
+            height: 18px;
+            width: 18px;
+            border-radius: 50%;
+            background-color: white;
+            left: 4px;
+            bottom: 3px;
+            transition: 0.4s;
+        }
+
+        input:checked + .slider {
+            background-color: #f1c40f;
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(26px);
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="/images/kinoflix.png" alt="kinoflix Logo">
+                <h1>kinoflix</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="/upload"><i class="fas fa-upload"></i> Upload</a></li>
+                </ul>
+            </nav>
+
+            <!-- Toggle Switch -->
+            <label class="theme-switch">
+                <input type="checkbox" id="theme-toggle">
+                <span class="slider"></span>
+            </label>
+        </aside>
+        <main>
+            <div class="upload-container">
+                <h2>Upload a Movie</h2>
+                <form action="/upload" method="POST" enctype="multipart/form-data">
+                    <input type="text" name="title" placeholder="Movie Title (max 32 chars)" maxlength="32" required>
+                    <input type="text" name="genre" placeholder="Genre (max 32 chars)" maxlength="32" required>
+                    <input type="number" name="year" placeholder="Year of Release" min="1900" max="2099" required>
+                    <textarea name="description" placeholder="Description (max 256 chars)" maxlength="256" rows="4" required></textarea>
+                    <label for="cover_image">Upload Cover (PNG only, max 25MB):</label>
+                    <input type="file" name="cover_image" accept=".png" required>
+                    <label for="movie_file">Upload Movie (MP4 only):</label>
+                    <input type="file" name="movie_file" accept=".mp4" required>
+                    <button type="submit"><i class="fas fa-upload"></i> Upload</button>
+                </form>
+            </div>
+        </main>
+    </div>
+    <script>
+        // Theme Toggle Script
+        const themeToggle = document.getElementById('theme-toggle'); // Correct ID
+        const body = document.body;
+        const logo = document.querySelector('.logo img'); // Updated selector for logo
+        const favicon = document.querySelector('link[rel="icon"]');
+    
+        // Apply saved theme on load or default to dark theme
+        const currentTheme = localStorage.getItem('theme') || 'dark-theme';
+        body.classList.add(currentTheme);
+    
+        if (currentTheme === 'light-theme') {
+            logo.src = '/images/kinoflix-light.png'; // light theme logo
+            favicon.href = '/images/kinoflix-light.ico'; // light theme favicon
+        } else {
+            logo.src = '/images/kinoflix.png'; // dark theme logo
+            favicon.href = '/images/kinoflix.ico'; // dark theme favicon
+        }
+    
+        // Toggle theme switching
+        themeToggle.addEventListener('change', () => {
+            if (themeToggle.checked) {
+                body.classList.add('light-theme');
+                body.classList.remove('dark-theme');
+                logo.src = '/images/kinoflix-light.png'; // light theme logo
+                favicon.href = '/images/kinoflix-light.ico'; // light theme favicon
+                localStorage.setItem('theme', 'light-theme');
+            } else {
+                body.classList.add('dark-theme');
+                body.classList.remove('light-theme');
+                logo.src = '/images/kinoflix.png'; // dark theme logo
+                favicon.href = '/images/kinoflix.ico'; // dark theme favicon
+                localStorage.setItem('theme', 'dark-theme');
+            }
+        });
+    </script>
+    
+</body>
+</html>

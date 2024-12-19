@@ -1,0 +1,217 @@
+<html>
+<head>
+    <title>kinoflix - login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" href="/images/kinoflix.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;700&display=swap");
+
+        :root {
+            --bg-color: rgba(34, 34, 34, 0.9);
+            --card-bg: rgba(255, 255, 255, 0.6);
+            --accent-color: #007aff;
+            --dark-accent: #005bb5;
+            --grey: #aaa;
+            --text-color: #333;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        .light-theme {
+            --bg-color: rgba(255, 255, 255, 0.8);
+            --card-bg: rgba(255, 255, 255, 0.6);
+            --accent-color: #ff9800;
+            --dark-accent: #ff5722;
+            --grey: #666;
+            --text-color: #333;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        .dark-theme {
+            --bg-color: rgba(34, 34, 34, 0.9);
+            --card-bg: rgba(44, 44, 44, 0.8);
+            --accent-color: #82aaff;
+            --dark-accent: #3d5afe;
+            --grey: #888;
+            --text-color: #f4f4f4;
+            --shadow-color: rgba(0, 0, 0, 0.5);
+        }
+
+        body {
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(10px);
+            transition: background-color 0.5s, color 0.5s;
+            }
+
+            body.dark-theme {
+                background-color: var(--bg-color);
+                color: var(--text-color);
+            }
+
+            body.light-theme {
+                background-color: var(--bg-color);
+                color: var(--text-color);
+            }
+
+
+        .login-container {
+            background-color: var(--card-bg);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 30px var(--shadow-color);
+            text-align: center;
+            width: 300px;
+            backdrop-filter: blur(10px);
+        }
+
+        .login-container h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: var(--accent-color);
+        }
+
+        .login-container p {
+            color: var(--grey);
+            margin-bottom: 30px;
+        }
+
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid var(--grey);
+            background-color: var(--card-bg);
+            color: var(--text-color);
+            font-size: 14px;
+            border-radius: 5px;
+            box-shadow: 0 4px 30px var(--shadow-color);
+            backdrop-filter: blur(10px);
+        }
+
+        .login-container .btn {
+            background-color: var(--accent-color);
+            color: var(--text-color);
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 20px 0;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .login-container .btn:hover {
+            background-color: var(--dark-accent);
+            transform: scale(1.05);
+        }
+
+        .login-container img {
+            width: 120px;
+            margin: 0 auto 20px;
+        }
+
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+            font-size: 20px;
+            color: var(--text-color);
+        }
+
+        .theme-switch {
+            display: inline-flex;
+            align-items: center;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .theme-switch input {
+            display: none;
+        }
+
+        .slider {
+            position: relative;
+            width: 50px;
+            height: 24px;
+            background-color: #000;
+            border-radius: 34px;
+            transition: 0.4s;
+        }
+        .slider:before {
+            content: "";
+            position: absolute;
+            height: 18px;
+            width: 18px;
+            border-radius: 50%;
+            background-color: white;
+            left: 4px;
+            bottom: 3px;
+            transition: 0.4s;
+        }
+        input:checked + .slider {
+            background-color: #f1c40f;
+        }
+        input:checked + .slider:before {
+            transform: translateX(26px);
+        }
+    </style>
+</head>
+<body>
+    <div class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <div class="login-container">
+        <img src="/images/kinoflix.png" alt="kinoflix Logo" id="logo">
+        <h1>welcome back to kinoflix</h1>
+        <p>sign in to continue</p>
+        <form class="content" action="/login" method="post">
+            <input class="login" type="text" name="username" placeholder="username or e-mail" required>
+            <input class="login" type="password" name="password" placeholder="password" required>
+            <input class="btn btn-default" type="submit" value="login">
+        </form>
+    </div>
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+        const icon = themeToggle.querySelector('i');
+        const logo = document.getElementById('logo');
+        const favicon = document.querySelector('link[rel="icon"]');
+        const currentTheme = localStorage.getItem('theme') || 'dark-theme';
+        body.classList.add(currentTheme);
+        if (currentTheme === 'light-theme') {
+            icon.classList.replace('fa-moon', 'fa-sun');
+            logo.src = '/images/kinoflix-light.png'; 
+            favicon.href = '/images/kinoflix-light.ico'; 
+        } else {
+            icon.classList.replace('fa-sun', 'fa-moon');
+            logo.src = '/images/kinoflix.png'; 
+            favicon.href = '/images/kinoflix.ico';
+        }    
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('light-theme');
+            body.classList.toggle('dark-theme');
+            if (body.classList.contains('light-theme')) {
+                icon.classList.replace('fa-moon', 'fa-sun');
+                logo.src = '/images/kinoflix-light.png'; 
+                favicon.href = '/images/kinoflix-light.ico'; 
+                localStorage.setItem('theme', 'light-theme');
+            } else {
+                icon.classList.replace('fa-sun', 'fa-moon');
+                logo.src = '/images/kinoflix.png'; 
+                favicon.href = '/images/kinoflix.ico'
+                localStorage.setItem('theme', 'dark-theme');
+            }
+        });
+    </script>    
+</body>
+</html>

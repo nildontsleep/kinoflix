@@ -1,11 +1,11 @@
 ![kinoflix](https://github.com/user-attachments/assets/ced26b08-d517-4aa6-9a61-ce7622075cca)
 
-![⭐](https://img.shields.io/github/stars/planetwiide/kinoflix?style=social)  
-![🍴](https://img.shields.io/github/forks/planetwiide/kinoflix?style=social)  
-![🐞](https://img.shields.io/github/issues/planetwiide/kinoflix)  
-![⚡](https://img.shields.io/github/commit-activity/m/planetwiide/kinoflix)  
-![🆙](https://img.shields.io/github/last-commit/planetwiide/kinoflix)  
-![📚](https://img.shields.io/github/license/planetwiide/kinoflix)
+![⭐](https://img.shields.io/github/stars/nildontsleep/kinoflix?style=social)  
+![🍴](https://img.shields.io/github/forks/nildontsleep/kinoflix?style=social)  
+![🐞](https://img.shields.io/github/issues/nildontsleep/kinoflix)  
+![⚡](https://img.shields.io/github/commit-activity/m/nildontsleep/kinoflix)  
+![🆙](https://img.shields.io/github/last-commit/nildontsleep/kinoflix)  
+![📚](https://img.shields.io/github/license/nildontsleep/kinoflix)
 
 # 🆕 BIG UPDATE : improved ui a ton, added in app media upload and a lot more incoming 🫀
 
@@ -54,7 +54,7 @@ pip install flask
 ### clone the repository
 
 ```bash
-git clone https://github.com/planetwiide/kinoflix.git
+git clone https://github.com/nildontsleep/kinoflix.git
 cd kinoflix
 ```
 

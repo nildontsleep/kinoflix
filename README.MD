@@ -1,43 +1,47 @@
 ![kinoflix](https://github.com/user-attachments/assets/ced26b08-d517-4aa6-9a61-ce7622075cca)
 
-![⭐](https://img.shields.io/github/stars/planetwiide/kinoflix?style=social)
-![🍴](https://img.shields.io/github/forks/planetwiide/kinoflix?style=social)
-![🐞](https://img.shields.io/github/issues/planetwiide/kinoflix)
-![⚡](https://img.shields.io/github/commit-activity/m/planetwiide/kinoflix)
-![🆙](https://img.shields.io/github/last-commit/planetwiide/kinoflix)
+![⭐](https://img.shields.io/github/stars/planetwiide/kinoflix?style=social)  
+![🍴](https://img.shields.io/github/forks/planetwiide/kinoflix?style=social)  
+![🐞](https://img.shields.io/github/issues/planetwiide/kinoflix)  
+![⚡](https://img.shields.io/github/commit-activity/m/planetwiide/kinoflix)  
+![🆙](https://img.shields.io/github/last-commit/planetwiide/kinoflix)  
 ![📚](https://img.shields.io/github/license/planetwiide/kinoflix)
 
-## 🏯 kinoflix | v1.0.1
+# 🆕 BIG UPDATE : improved ui a ton, added in app media upload and a lot more incoming 🫀
 
-**kinoflix** is a flask-based media server designed for streaming and managing your movie collection with ease. enjoy a sleek, user-friendly interface and seamless navigation.
+## 🏯 kinoflix | v1.0.2
 
+**kinoflix** is a flask-based media server designed for streaming and managing your video collection with ease. enjoy a sleek, user-friendly interface and seamless navigation. while tailored for videos, it can also support movies.
 
+---
 
-## ✅ to-do list 
+## ✅ to-do list
 
-- [x] theme managment ⚡
-- [x] fix not working on phone 🍃
-- [x] search bar 🔍
-- [x] security fixes 🫀
-- [ ] in app media edit 📋 (figured out how to do it, adding it in the week)
-- [ ] anime/series support 🏯
-- [ ] auto fetch media informations with an api (imdb) 🎀
+- [x] works on ios / macos 🍎  
+- [x] search bar 🔍  
+- [ ] in-app upload 💻  
+- [ ] anime/series support 🏯  
+- [ ] auto-fetch media info using an api (like imdb) 🎀  
 
-## 🚀 features 
+---
 
-- **user authentication** 🪪
+## 🚀 features
+
+- **user authentication** 🪪  
   secure login and user management.
 
 - **responsive dashboard** 📊  
   access your media library easily with an aesthetic layout.
 
-- **movie streaming** 🎥  
-  stream movies in various formats (mkv, mp4, etc.) from anywhere.
+- **video streaming** 🎥  
+  stream mp4 videos from anywhere.
 
-- **ascii art interface** 🖤
+- **ascii art interface** 🖤  
   enjoy an engaging browsing experience with pystyle.
 
-## ⚙️ installation 
+---
+
+## ⚙️ installation
 
 ### prerequisites
 
@@ -60,38 +64,49 @@ cd kinoflix
 python main.py
 ```
 
-## 🎬 adding a movie 
+---
 
-to add a movie to **kinoflix**, follow these steps:
+## 🎬 adding a video
 
-1. **place the movie file** in the `media` directory.
-   - supported formats: **mkv**, **avi**, and **mp4**.
+to add a video to **kinoflix**, follow these steps:
 
-2. **rename the movie file** to a simple name, like:
-   - "fight club" or "blade runner 2049".
+1. **open the kinoflix web app**  
+   launch the app in your browser by navigating to the url printed when the app starts.
 
-3. **add the cover image**:
-   - place the cover image in the `media_infos` directory.
-   - rename the cover image to match the movie name (e.g., "fight club.png" or "blade runner 2049.png").
+2. **log in to your account**  
+   use your credentials to access your dashboard.
 
-4. **copy the template**:
-   - copy the `template.yml` file from the `media_infos` directory.
-   - rename it to match your movie title (e.g., "fight club.yml" or "blade runner 2049.yml").
+3. **navigate to the upload section**  
+   click on the **upload** button/icon in the navigation bar.
 
-5. **edit the information**:
-   - open the renamed `.yml` file in Notepad or any plain text editor.
-   - update the details as needed.
+4. **select the file to upload**  
+   use the file selector to choose the video file from your device. only mp4 is supported.
 
-## 🖥️ usage 
+5. **add video details (optional)**  
+   provide a title, description, year, and genre.
 
-1. open your web browser and navigate to the printed url.
-2. log in with your credentials.
-3. enjoy streaming your favorite movies!
+6. **start the upload**  
+   click **upload** to begin.
 
-## 🤝 contributing 
+7. **verify the upload**  
+   once uploaded, the video will appear in your library. you can start streaming it immediately.
 
-contributions are welcome! please feel free to submit a pull request or open an issue.
+---
 
-## 📄 license 
+## 🖥️ usage
+
+1. open your web browser and navigate to the printed url.  
+2. log in with your credentials.  
+3. enjoy streaming your favorite videos!
+
+---
+
+## 🤝 contributing
+
+contributions are welcome! feel free to submit a pull request or open an issue.
+
+---
+
+## 📄 license
 
 this project is licensed under the mit license.

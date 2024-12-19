@@ -1,4 +1,4 @@
-![kLogo](https://imgur.com/a/yB0rCLq)
+![kLogo](https://i.imgur.com/HITRV5a.png)
 
 ![⭐](https://img.shields.io/github/stars/nildontsleep/kinoflix?style=social)  
 ![🍴](https://img.shields.io/github/forks/nildontsleep/kinoflix?style=social)  

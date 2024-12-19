@@ -313,7 +313,7 @@ def search():
                         or query in movie_category
                         or query in movie_year
                     ):
-                        cover_image = f'{movie_info["name"]}.png'
+                        cover_image = f'{movie_info["name"].replace(" ", "_").lower()}.png'
                         if not os.path.exists(f"media_infos/{cover_image}"):
                             cover_image = "img/kinoflix.png"
 

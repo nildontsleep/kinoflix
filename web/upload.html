@@ -219,8 +219,8 @@
                 <form action="/upload" method="POST" enctype="multipart/form-data">
                     <input type="text" name="title" placeholder="Movie Title (max 32 chars)" maxlength="32" required>
                     <input type="text" name="genre" placeholder="Genre (max 32 chars)" maxlength="32" required>
-                    <input type="number" name="year" placeholder="Year of Release" min="1900" max="2099" required>
-                    <textarea name="description" placeholder="Description (max 256 chars)" maxlength="256" rows="4" required></textarea>
+                    <input type="number" name="year" placeholder="Year of Release" min="1900" max="3000" required>
+                    <textarea name="description" placeholder="Description (max 1024 chars)" maxlength="1024" rows="4" required></textarea>
                     <label for="cover_image">Upload Cover (PNG only, max 25MB):</label>
                     <input type="file" name="cover_image" accept=".png" required>
                     <label for="movie_file">Upload Movie (MP4 only):</label>

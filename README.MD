@@ -57,7 +57,7 @@ cd kinoflix
 ### run the application
 
 ```bash
-python main.py
+python app.py
 ```
 
 ---

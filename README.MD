@@ -45,11 +45,7 @@
 
 ### prerequisites
 
-make sure you have python and flask installed:
-
-```bash
-pip install flask
-```
+make sure you have python and required pip modules (run install.bat)
 
 ### clone the repository
 

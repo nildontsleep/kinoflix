@@ -74,11 +74,7 @@ Here’s a quick look at **Kinoflix** in action!
 
 ![Placeholder for Video Player Screenshot](https://via.placeholder.com/800x450?text=Video+Player+Screenshot)
 
----
-
 ## 📤 Upload Page
-
-The **Upload Page** lets you add videos directly through your browser.  
 
 ![Placeholder for Upload Page Screenshot](https://via.placeholder.com/800x450?text=Upload+Page+Screenshot)  
 

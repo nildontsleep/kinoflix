@@ -1,4 +1,13 @@
-![kLogo](https://i.imgur.com/HITRV5a.png)
+
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Roboto-mono&duration=2000&color=FFFFFF&center=false&vCenter=true&lines=kinoflix)](https://git.io/typing-svg)
+<img align="left" src="https://i.imgur.com/HITRV5a.png" width="147"/> 
+
+```bash
+github.com/nildontsleep/kinoflix
+dl    $  git clone ° 
+run   $  python °
+```
+
 
 ![⭐](https://img.shields.io/github/stars/nildontsleep/kinoflix?style=social)  
 ![🍴](https://img.shields.io/github/forks/nildontsleep/kinoflix?style=social)  

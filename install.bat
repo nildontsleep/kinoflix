@@ -1,5 +1,4 @@
 @echo off
-title Kinoflix | Installer
 echo Installing modules for Kinoflix !
 echo  - Flask
 echo  - Pystyle

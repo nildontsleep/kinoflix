@@ -68,15 +68,16 @@ Here’s a quick look at **Kinoflix** in action!
 
 ### 📁 Dashboard
 
-![Placeholder for Dashboard Screenshot](https://via.placeholder.com/800x450?text=Dashboard+Screenshot)
+![Dashboard Preview](https://i.imgur.com/eFP2Gfl.png)
 
 ### 🎥 Video Player
 
-![Placeholder for Video Player Screenshot](https://via.placeholder.com/800x450?text=Video+Player+Screenshot)
+![Player Preview](https://i.imgur.com/bzRW2G2.png)
 
 ## 📤 Upload Page
 
-![Placeholder for Upload Page Screenshot](https://via.placeholder.com/800x450?text=Upload+Page+Screenshot)  
+![Upload Preview](https://i.imgur.com/SFRVO8I.png)
+
 
 ---
 

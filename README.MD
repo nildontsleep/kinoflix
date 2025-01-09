@@ -7,9 +7,9 @@ dl    $  git clone °
 run   $  python °
 
 ```
-* *
+** **
 
-* *
+** **
 ---
 
 # 🏯 kinoflix | v1.0.2

@@ -1,6 +1,6 @@
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Roboto-mono&duration=2000&color=FFFFFF&center=false&vCenter=true&lines=kinoflix)](https://git.io/typing-svg)
-<img align="left" src="https://i.imgur.com/HITRV5a.png" width="147"/> 
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Roboto-mono&duration=4000&color=FFFFFF&center=false&vCenter=true&lines=kinoflix)](https://git.io/typing-svg)
+<img align="left" src="https://i.imgur.com/HITRV5a.png" width="150"/> 
 
 ```bash
 github.com/nildontsleep/kinoflix

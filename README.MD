@@ -1,6 +1,6 @@
 <img align="left" src="https://i.imgur.com/HITRV5a.png" width="150"/>
 ```bash
-° = github.com/nildontsleep/kinoflix
+github.com/nildontsleep/kinoflix
 dl    $  git clone ° 
 run   $  python °
 ```

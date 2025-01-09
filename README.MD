@@ -8,6 +8,8 @@ run   $  python °
 
 ```
 
+---
+
 ## 🏯 kinoflix | v1.0.2
 
 **kinoflix** is a flask-based media server designed for streaming and managing your video collection with ease. enjoy a sleek, user-friendly interface and seamless navigation. while tailored for videos, it can also support movies.
